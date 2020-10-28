@@ -1,11 +1,7 @@
 on:
-  push:
+  pull_request:
     branches:
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!master'   # excludes master (this is a PR-only workflow)
-      - '!release'
+      - 'master'
 jobs:
   pr:
     name: "Pull Request Checks"
