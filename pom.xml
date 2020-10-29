@@ -57,6 +57,7 @@
         <spring.boot.version>2.3.4.RELEASE</spring.boot.version>
         <acme4j.version>2.10</acme4j.version>
         <commons-io.version>2.3</commons-io.version>
+        <nexus.autoReleaseAfterClose>false</nexus.autoReleaseAfterClose>
     </properties>
 
     <dependencies>
@@ -176,7 +177,7 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                            <autoReleaseAfterClose>${nexus.autoReleaseAfterClose}</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
                 </plugins>
