@@ -6,6 +6,8 @@ jobs:
   pr:
     name: "Pull Request Checks"
     runs-on: ubuntu-latest
+    # Don't run if this is a change set created by the Release Bot
+    if: "!contains(github.event.head_commit.author.name, 'Release Bot')"
     steps:
     - uses: actions/checkout@v1
 
