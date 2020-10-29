@@ -46,8 +46,9 @@ jobs:
         run: ./mvnw --batch-mode release:prepare -Dusername=$GITHUB_ACTOR -Dpassword=$GITHUB_TOKEN
 
       - name: Perform release and Deploy a new version to central
-        run: ./mvnw clean release:perform -B -DskipTests -DskipExamples -Prelease
+        run: ./mvnw clean release:perform -B -DskipTests -DskipExamples -Prelease -Dnexus.autoReleaseAfterClose=$MAVEN_RELEASE_ENABLED
         env:
+          MAVEN_RELEASE_ENABLED: ${{ secrets.SONATYPE_RELEASE_ENABLED }}
           MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
