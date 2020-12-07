@@ -1,9 +1,15 @@
-package com.github.csueiras.acme;
+package com.github.dbranco.acme;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.AutoConfigurations;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
+
+import com.github.dbranco.acme.AcmeAutoConfiguration;
+import com.github.dbranco.acme.AcmeEncryptRunner;
+import com.github.dbranco.acme.CertGenerator;
+import com.github.dbranco.acme.ChallengeController;
+import com.github.dbranco.acme.ChallengeStore;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

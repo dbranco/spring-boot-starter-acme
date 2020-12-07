@@ -1,4 +1,4 @@
-package com.github.csueiras.acme;
+package com.github.dbranco.acme;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

@@ -1,4 +1,4 @@
-package com.github.csueiras.acme;
+package com.github.dbranco.acme;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConditionalOnProperty(name = "acme.enabled", havingValue = "true")
-@ComponentScan(basePackages = "com.github.csueiras.acme")
+@ComponentScan(basePackages = "com.github.dbranco.acme")
 @EnableConfigurationProperties(AcmeConfigProperties.class)
 public class AcmeAutoConfiguration {
 

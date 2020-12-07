@@ -1,4 +1,4 @@
-package com.github.csueiras.acme;
+package com.github.dbranco.acme;
 
 /**
  * Store for challenge authorizations
