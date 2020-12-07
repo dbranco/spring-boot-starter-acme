@@ -8,7 +8,10 @@ This project depends on the [acme4j](https://github.com/shred/acme4j) library.
 
 Please note that this is a fork from another project at [spring-boot-starter-acme](https://github.com/csueiras/spring-boot-starter-acme). My idea is to develop this project following the spring boot versions that are supported by JHipster starting from version 6.10.5
 
-The version of the project will use the JHipster version in order to keep an easy track of it.
+The version of the project will use the Spring Boot version minimum required by a JHipster version in order to keep an easy track of it. For instance:
+1. JHipster version 6.10.5 use Spring Boot 2.2.7.RELEASE then the version of the project is 2.2.7.RELEASE
+
+Once a version of the project becomes obsolete another will be generated and keep a compatible track.
 
 # Dependencies
 
