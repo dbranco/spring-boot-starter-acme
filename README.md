@@ -6,11 +6,9 @@ This project depends on the [acme4j](https://github.com/shred/acme4j) library.
 
 # Fork
 
-Please note that this is a fork from a seemingly abandoned project at [spring-boot-starter-acme](https://github.com/creactiviti/spring-boot-starter-acme). I plan to keep this library as up to date as possible with respect to its dependencies. All code has been moved into a new group id and package structure to make it easier to release it on its own.
-I've also added some basic tests, and performed some code "clean up" to standardize the codebase.
+Please note that this is a fork from another project at [spring-boot-starter-acme](https://github.com/csueiras/spring-boot-starter-acme). My idea is to develop this project following the spring boot versions that are supported by JHipster starting from version 6.10.5
 
-Wishlist (things I hope to get to some day):
-- Add test coverage to the [CertGenerator](./src/main/java/com/github/csueiras/acme/CertGenerator.java), this is the most important part of this library and its currently not covered in tests.
+The version of the project will use the JHipster version in order to keep an easy track of it.
 
 # Dependencies
 
@@ -22,7 +20,7 @@ This library will be available in Maven central
 
 ```
 <dependency>
-  <groupId>com.github.csueiras</groupId>
+  <groupId>com.github.dbranco</groupId>
   <artifactId>spring-boot-starter-acme</artifactId>
   <version>{VERSION}</version>
 </dependency>
